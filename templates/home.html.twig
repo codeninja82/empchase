@@ -1,0 +1,324 @@
+{# templates/blog/layout.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div id ="car-container">
+<div class="container-fluid" style= "padding-right: 0px;
+    padding-left: 0px;">
+
+
+
+<div id="carousel-home" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+  <div id  = "carousel-inner">
+
+    <div class="carousel-item active">
+      <div class = "overlay-background">
+    <div class="overlay">
+      <img  class="d-block w-100 carousel-home-img" src="empImg1.jpg" alt="First slide">
+     
+</div>
+    </div>
+     <div id = "cap_one"  class="carousel-caption ">
+     <div id = "cap-head">
+    <h5 id ="h5">The People Award</h5>
+    </div>
+    <p> We have been awarded ‘The People Award’ three years running due to our high levels of customer service.<p>
+   <a href="{{ path('emp_properties') }}" class="btn btn-primary btn-lg btn-md"   role="button" style = "background-color:  #2b459c!important; color: #FFFFFF!important">Find a property</a>
+    <a href="{{ path('emp_valuation_main') }}" class="btn btn-primary btn-lg btn-md"   role="button" style = "background-color:  #d39e00!important; color: #FFFFFF!important">Valuation</a>
+   {# <button type="button" class="btn btn-primary btn-lg btn-md" style = "background-color:  #d39e00!important; color: #FFFFFF!important">Valuation</button> #}
+  </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class = "overlay-background">
+    <div class="overlay">
+      <img  class="d-block w-100 carousel-home-img" src="empImg2.jpg" alt="Second slide">
+  
+</div>
+    </div>
+        <div class="carousel-caption">
+        <div id = "cap-head">
+    <h5 id ="h5">No admin fee!!</h5>
+    </div>
+    <p> There are many variations of passages of Lorem Ipsum available,<p>
+    <a href="{{ path('emp_properties') }}" class="btn btn-primary btn-lg btn-md"   role="button" style = "background-color:  #2b459c!important; color: #FFFFFF!important">Find a property</a>
+    <a href="{{ path('emp_valuation_main') }}" class="btn btn-primary btn-lg btn-md"   role="button" style = "background-color:  #d39e00!important; color: #FFFFFF!important">Valuation</a>
+  </div>
+     </div>
+    
+
+
+    <div class="carousel-item">
+      <div class = "overlay-background">
+    <div class="overlay">
+      <img  class="d-block w-100 carousel-home-img" src="empImg3.jpg" alt="Third slide">
+    
+  </div>
+</div>
+  
+      <div class="carousel-caption">
+      <div id = "cap-head">
+    <h5 id ="h5">Virtual Viewings</h5>
+    </div>
+    <p> Property videos and 360 degree images to tenants who are unable to attend viewings<p>
+   <a href="{{ path('emp_properties') }}" class="btn btn-primary btn-lg btn-md"   role="button" style = "background-color:  #2b459c!important; color: #FFFFFF!important">Find a property</a>
+    <a href="{{ path('emp_valuation_main') }}" class="btn btn-primary btn-lg btn-md"   role="button" style = "background-color:  #d39e00!important; color: #FFFFFF!important">Valuation</a>
+     </div>
+   
+
+
+
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+  
+
+<div id= "home-content">
+
+  <div id ="jumbotron" class="jumbotron jumbotron-fluid">
+  <div id = "service-jumbotron-container" class="container">
+    <p class="services-p">We provide comprehensive services to corporate landlords, buy-to-let individual landlords, tenants and property buyers.</p>
+   <div id="arrow-img-left"> <img src="arrow-right.png" alt="Arrow-Left"></div>
+   <div id="arrow-img-right"> <img src="arrow-left.png" alt="Arrow-Right"></div>
+    <div id = "service-icon-container">
+    
+    <a href="{{ path('emp_properties') }}"><div id="service-img" class="col service-img-class"><img id="emp-services" src="salesandLetting.png" alt="Avatar" ><h6>Sales &amp; Lettings</h6></div></a>
+    <a href="{{ path('emp_services_property-management') }}"><div id="service-img" class="col service-img-class"><img id="emp-services" src="propertyM.png" alt="Avatar"><h6>Property Management</h6></div></a>
+    <a href="{{ path('emp_services_build-to-rent') }}"><div id="service-img" class="col service-img-class"><img id="emp-services" src="buildtoRent.png" alt="Avatar"><h6>Build to rent</h6></div></a>
+    <a href="{{ path('emp_services_asset-management') }}"><div id="service-img" class="col service-img-class"><img id="emp-services" src="assetMan.png" alt="Avatar"><h6>Asset Management</h6></div></a>
+    <a href="{{ path('emp_services_block-management') }}"><div id="service-img" class="col service-img-class"><img id="emp-services" src="blockMan.png" alt="Avatar"><h6>Block Management</h6></div></a>
+    <a href="{{ path('emp_services_/market-research') }}"><div id="service-img" class="col service-img-class"><img id="emp-services" src="marketRes.png" alt="Avatar"><h6>Market Research</h6></div></a>
+    
+    
+    </div>
+
+  </div>
+</div>
+</div>
+<div id = "featured-properties">
+<h2> Featured properties </h2>
+
+</div>
+{# <img src="https://picsum.photos/285/200/?image=4&random" alt="Second slide"> #}
+{#----------------------------------------------------------------------------------------------------------------------------------#}
+<div class="container-fluid" style= "padding-right: 0px;
+    padding-left: 0px;">
+
+<div class="carousel-wrap">
+  <div class="owl-carousel">
+    <div class="item">
+      <div class="card">
+    <img class="card-img-top" src="prop1.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">£1,100 pcm (£254 pw)</h5>
+      <h6 class="card-title">2 bed flat to rent </h6>
+      <p class="card-text">Willow Tree Lodge, Eastbury Avenue, Northwood HA6</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+    </div>
+        <div class="item">
+      <div class="card">
+    <img class="card-img-top" src="prop2.jpg" alt="Card image cap">
+    <div class="card-body">
+    <h5 class="card-title">£350,000 Offers over</h5>
+      <h6 class="card-title">3 bed end terrace house for sale</h6>
+      <p class="card-text">Willow Tree Lodge, Eastbury Avenue, Northwood HA6</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+    </div>
+        <div class="item">
+      <div class="card">
+    <img class="card-img-top" src="prop3.jpg" alt="Card image cap">
+    <div class="card-body">
+     <h5 class="card-title">£1,100 pcm (£254 pw)</h5>
+      <h6 class="card-title">2 bed flat to rent </h6>
+      <p class="card-text">Willow Tree Lodge, Eastbury Avenue, Northwood HA6</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+    </div>
+        <div class="item">
+      <div class="card">
+    <img class="card-img-top" src="prop4.jpg" alt="Card image cap">
+    <div class="card-body">
+     <h5 class="card-title">£350,000 Offers over</h5>
+      <h6 class="card-title">3 bed end terrace house for sale</h6>
+      <p class="card-text">Willow Tree Lodge, Eastbury Avenue, Northwood HA6</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+    </div>
+        <div class="item">
+      <div class="card">
+    <img class="card-img-top" src="prop5.jpg" alt="Card image cap">
+    <div class="card-body">
+     <h5 class="card-title">£1,100 pcm (£254 pw)</h5>
+      <h6 class="card-title">2 bed flat to rent </h6>
+      <p class="card-text">Willow Tree Lodge, Eastbury Avenue, Northwood HA6</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+</div>
+{#----------------------------------------------------------------------------------------------------------------------------------#}
+
+{#-----Grid Contents----------------------------------------------------------------------------------------------------------------#}
+
+<div id="items-container" class="container-fluid">
+<div class="items-container-1">
+
+<div class ="items-overlay">
+  <div class="awards">
+  <img  class="responsive" src = "emp-awards.jpg"><h4>Our Acheivements</h4></img>
+  </div>
+  </div>
+
+  <div class="reviews">
+  <img  class="responsive" src = "certificates-with-safelogo1.png"></img>
+  </div>
+
+</div>
+
+ </div>
+</div>
+</div>
+
+  
+
+
+
+</div> 
+
+</div>
+</div> <!--Container-fluid-->
+{#----------------------------------------------------------------------------------------------------------------------------------#}
+ 
+{# <div id="wd_id">
+</div>
+<script type="text/javascript" src="https://www.allagents.co.uk/widgets/ratings.js"></script>
+<script type="text/javascript">init_widget(200,150,9542,'plain', '000', '')</script>
+
+<!-- BEGIN ESTAS WIDGET -->
+<script>
+    (function (w,d,s,o,f,js,fjs) {
+        w['ESTAS-Widget']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+        js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+        js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+    }(window, document, 'script', 'estas', 'https://www.theestas.com/assets/js/min/widget.bundle.js'));
+    estas('init', { el: 'estas-widget', key: 'kqIfEHGP8Yiy9G9S4EQUBSQQqBhNFbo6mMeLODVl9rYDqfcH7UQzs8bRu5bX', showComments: false });
+</script>
+<div id="estas-widget"></div>
+<!-- END ESTAS WIDGET -->
+
+  <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>  
+  <div class="fb-post" 
+      data-href="https://www.facebook.com/kishor.gangawani/posts/3986695861354253"
+      data-width="300"></div> #}
+<div id = "ratings" style="margin-top:30px">
+      <div class="listing container" style="max-width: 1200px;">
+
+   <div id ="review-counter" class = "container">
+   <div id="wd_id">
+</div>
+<script type="text/javascript" src="https://www.allagents.co.uk/widgets/ratings.js"></script>
+<script type="text/javascript">init_widget(200,150,9542,'plain', '000', '')</script>
+<div style="width: 100%;height: 35%;">
+<!-- SECTION NUMBERS -->
+	<section class="numbers dark-blue-bg white-txt" style = "padding:0px;">
+		<div class="marged flex">
+		<!-- item 01 -->
+			<div class="number-item" style="text-align: center;">
+				<h2><span class="value">782</span></h2>
+				<h6>Houses Sold</h6>
+			</div>
+
+		<!-- item 02 -->
+			<div class="number-item" style="text-align: center; padding: 3px;">
+				<h2 class="value">1388</h2>
+				<h6>clients</h6>
+			</div>
+		</div>
+	</section>
+<!-- END OF SECTION NUMBERS -->
+
+</div>
+</div>
+
+   {# <div class="wide">
+   <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>  
+  <div class="fb-post" 
+      data-href="https://www.facebook.com/kishor.gangawani/posts/3986695861354253"
+      data-width="100"></div>
+    </div> #}
+
+
+ <!-- BEGIN ESTAS WIDGET -->
+   <div>
+    <script>
+    (function (w,d,s,o,f,js,fjs) {
+        w['ESTAS-Widget']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+        js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+        js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+    }(window, document, 'script', 'estas', 'https://www.theestas.com/assets/js/min/widget.bundle.js'));
+    estas('init', { el: 'estas-widget', key: 'kqIfEHGP8Yiy9G9S4EQUBSQQqBhNFbo6mMeLODVl9rYDqfcH7UQzs8bRu5bX', showComments: false });
+</script>
+<div id="estas-widget"></div>
+<!-- END ESTAS WIDGET -->
+  </div>
+
+    </div>
+  </div>
+    
+  <div class="items-container-2">
+   
+  
+  <div class="calcContainer">
+  <div class="calcSub">
+    <div class="calcHeading">Calculate your Monthly Payment</div>
+    <div style=" padding-left: auto;padding-left: 37px; padding-right: 37px;">
+      <form action="#" name="mortgage_calculator">
+      <input type="text" class="calcInput" id="inCost" placeholder="Loan Amount (£)" />
+
+
+      <input type="text" class="calcInput" id="inDown" placeholder="Down Payment (£)" />
+
+
+      <input type="text" class="calcInput" id="inInterest" placeholder="Interest (%)" />
+
+
+      <input type="text" class="calcInput" id="inTerm" placeholder="Length of Loan (years)" />
+    </div>
+    <p>
+      <button type="button" class="calcButton" id="btnCalculate">Calculate</button></form>
+    </p>
+    <p class="calcAnswer"><b>Total Monthly Payment</b>:
+      <br/>
+      <br/><span id="outMonthly">Please enter the values above.</span></p>
+  </div>
+</div>
+  
+ 
+
+  
+  {# <div class="blog col col-lg-6">
+  <img  class="responsive2" src = "blog-pic.png"></img>
+  <h4>Check out our blog</h4>
+  </div> #}
+
+
+  </div>
+{% endblock %}

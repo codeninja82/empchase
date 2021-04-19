@@ -1,0 +1,111 @@
+#index:
+#   path: /
+#   controller: App\Controller\DefaultController::index
+emp_services:
+    path:         /services
+    controller:   Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+    defaults:
+        template: /services/services.html.twig
+
+emp_home:
+    path:         /home
+    controller:   Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+    defaults:
+        template: /home.html.twig
+
+emp_services_lettings:
+    path:         /lettings
+    controller:   Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+    defaults:
+        template: /services/lettings.html.twig
+
+emp_services_sales:
+    path:         /sales
+    controller:   Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+    defaults:
+        template: /services/sales.html.twig
+
+emp_services_property-management:
+    path:         /property-management
+    controller:   App\Controller\Emp_services\PropertyManController::new
+    defaults:
+        template: /services/property-management.html.twig
+
+emp_services_build-to-rent:
+    path:         /build-to-rent
+    controller:  App\Controller\Emp_services\BuildRentController::new
+    defaults:
+        template: /services/build-to-rent.html.twig
+
+emp_services_asset-management:
+    path:         /asset-management
+    controller:   App\Controller\Emp_services\AssetManController::new
+    defaults:
+        template: /services/asset-management.html.twig
+
+emp_services_block-management:
+    path:         /block-management
+    controller:   App\Controller\Emp_services\BlockManContoller::new
+    defaults:
+        template: /services/block-management.html.twig
+
+emp_services_/market-research:
+    path:         /market-research
+    controller:   App\Controller\Emp_services\MarktReController::new
+    defaults:
+        template: /services/market-research.html.twig
+
+emp_properties:
+    path:         /properties
+    controller:   Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+    defaults:
+        template: /properties/properties.html.twig
+
+emp_rentalp:
+    path:         /rent
+    controller:   Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+    defaults:
+        template: /properties/rentalp.html.twig
+        
+emp_salep:
+    path:         /sale
+    controller:   Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+    defaults:
+        template: /properties/salep.html.twig
+
+emp_contact-us:
+    path:         /contact-us
+    controller:    App\Controller\ContactController::new
+    defaults:
+        template: /contact-us.html.twig
+
+emp_valuation_main:
+    path:         /valuation
+    controller:   Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+    defaults:
+        template: /services/valuation/valuation-main.html.twig
+
+emp_in_person_valuation:
+    path:         /valuation/inperson
+    controller:    App\Controller\Valuation\InpersonController:index
+    defaults:
+        template: /services/valuation/in-person-valuation.html.twig
+
+emp_virtual_valuation:
+    path:         /valuation/virtual
+    controller:    App\Controller\Valuation\VirtualController:index
+    defaults:
+        template: /services/valuation/virtual-valuation.html.twig
+
+emp_thank_you:
+    path:         /thank_you_contacting
+    controller:   Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+    defaults:
+        template: thank_you.html.twig
+
+
+email_send:
+    path:         /email_send
+    controller:   App\Controller\ContactController
+    defaults:
+        template: email_send.html.twig

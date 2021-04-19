@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+ {% block javascripts %}
+        {{ parent() }} 
+        {{ encore_entry_script_tags('pagination') }}
+        {{ encore_entry_script_tags('pagecustom') }}
+
+    {% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }} 
+    {{ encore_entry_link_tags('properties') }}
+{% endblock %}
+
+{% block body %}
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+   <div class="jumbotron jumbotron-fluid services-jumbo" style =" background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/empImg3.jpg');background-size: cover;
+  height:500px;" >
+  
+    <div class="container services-jumbo-container">
+      <h1 class="display-3">Valuation</h1>
+      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content.</p>
+      <p><a class="btn btn-primary btn-lg" href="#" style = "background-color:  #d39e00!important; color: #FFFFFF!important" role="button">Contact us</a></p>
+    </div>
+    
+    {# <img  class="service-img-wrap" src="services-banner.jpg" alt="First slide"> #}
+    
+  </div>
+
+<div id="properties-container" class="container" style = "margin-top: 50px;">
+
+<div class="card border-secondary mb-3" style="max-width: 18rem;">
+  <div class="card-header">In person valuations</div>
+  <div class="card-body text-secondary text-center">
+    <h5 class="card-title">tell us more about your porpety</h5>
+   <a href="{{ path('emp_in_person_valuation') }}"> <button type="button"  class="btn btn-primary">Click here</button></a>
+  </div>
+</div>
+
+<div class="card border-secondary mb-3" style="max-width: 18rem;">
+  <div class="card-header">Valuation valuations</div>
+  <div class="card-body text-secondary text-center">
+    <h5 class="card-title">we can help you with zoom, whatsapp or video call</h5>
+   <a href="{{ path('emp_virtual_valuation') }}"> <button type="button"  class="btn btn-primary">Click here</button></a>
+  </div>
+</div>
+
+
+
+  </div> <!--/container -->
+ 
+
+
+</main> 
+
+
+{% endblock %}

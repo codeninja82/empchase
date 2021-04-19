@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=565842800257522&autoLogAppEvents=1" nonce="Z2JTZKx3"></script>
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron jumbotron-fluid services-jumbo" style =" background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/buildtoRentBanner.jpeg');background-size: cover;
+  height:500px;" >
+  
+    <div class="container services-jumbo-container">
+      <h1 class="display-3">Virtual valuation</h1>
+      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content.</p>
+      <p><a class="btn btn-primary btn-lg" href="#" style = "background-color:  #d39e00!important; color: #FFFFFF!important" role="button">Contact us</a></p>
+    </div>
+    
+    {# <img  class="service-img-wrap" src="services-banner.jpg" alt="First slide"> #}
+    
+  </div>
+
+
+
+
+  
+<div class="container">
+
+<div class="row">
+  
+  <div class="col"  style="
+    background-color: #d39e00;
+    margin: 10px 10px 30px 10px;
+    padding: 20px;
+    border-radius: 3%;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+">
+    {{form(form)}}
+      </div>
+        <!--Grid column-->
+
+
+
+<div class="col-md-3 text-center">
+        <!--Grid column-->
+        <div>
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>14 Peterborough Road,Harrow,HA1 2BQ</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>0208 4227722</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>info@empirechase.co.uk <info@empirechase.co.uk></p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+</div>
+
+
+  </div>
+
+  </div> <!-- /container -->
+
+
+
+
+</main>
+
+
+
+{% endblock %}

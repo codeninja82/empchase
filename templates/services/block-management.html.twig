@@ -1,0 +1,111 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<main role="main">
+ 
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron jumbotron-fluid services-jumbo" style =" background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/blockManBanner.jpg');background-size: cover;
+  height:500px;" >
+  
+    <div class="container services-jumbo-container">
+      <h1 class="display-3">Block Management</h1>
+      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content.</p>
+      <p><a class="btn btn-primary btn-lg" href="#" style = "background-color:  #d39e00!important; color: #FFFFFF!important" role="button">Contact us</a></p>
+    </div>
+    
+    {# <img  class="service-img-wrap" src="services-banner.jpg" alt="First slide"> #}
+    
+  </div>
+
+
+    <!--<h1 class="text-center">Block Management</h1> -->
+<div class="container">
+  <!--  image left  -->
+  <div class="row">
+    <div class="col-md-6 animation-element slide-left">
+      <p class="lead">Our PRS - Build To Rent property/block management team manages over 9 PRS blocks In Harrow and Wembley for various corporate landlords. If you are portfolio landlord with over 12 apartments in a block or an asset manager for a corporate firm and want to know our PRS strategy please get in touch. charlotte@empirechase.co.uk
+            <br /><br />
+            <a href="" class="">Learn More</a>
+          </p>
+
+     
+    </div>
+    <!-- /.col-md-6 -->
+    <div class="col-md-6 animation-element slide-right">
+
+      <div class="row align-items-center h-100">
+        <div class="col">
+          
+         <img src="blockMan-pic.jpg" alt="" class="w-100" />
+
+        </div>
+      </div>
+
+    </div>
+    <!-- /.col-md-6 -->
+
+  </div>
+  <!-- /.row -->
+
+  <div class="row">
+    <div class="col-md-6 order-md-6 animation-element slide-left" style="margin-top: 20px;">
+
+     <h2>Empire Chase Block Management Capabilities</h2>
+
+              <ul>
+              <li>Monthly reporting and accounting.</li>
+                <li>Emergency response 24 hours a day.</li>
+                <li>Credit Background checks click here</li>
+                <li>Budgeting and tracking of performance.</li>
+                <li>Credit Background checks click here</li>
+                <li>Assistance in obtaining and evaluating financing..</li>
+              </ul> 
+
+    </div>
+
+
+   <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>14 Peterborough Road,Harrow,HA1 2BQ</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>0208 4227722</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>info@empirechase.co.uk <info@empirechase.co.uk></p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    <!-- /.col-md-6 -->
+    <div class="col-md-6 order-md-1 animation-element slide-right">
+      {{ form(form) }}  
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+       
+
+    </div>
+
+</section>
+
+
+    </div>
+  <!-- /.row contact-->
+
+  </div> <!-- /container -->
+
+
+
+
+</main>
+
+
+
+{% endblock %}

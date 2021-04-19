@@ -1,0 +1,149 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=565842800257522&autoLogAppEvents=1" nonce="Z2JTZKx3"></script>
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron jumbotron-fluid services-jumbo" style =" background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/buildtoRentBanner.jpeg');background-size: cover;
+  height:500px;" >
+  
+    <div class="container services-jumbo-container">
+      <h1 class="display-3">Build to rent</h1>
+      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content.</p>
+<p><a href="{{ path('emp_contact-us') }}"class="btn btn-primary btn-lg" href="#" style = "background-color:  #d39e00!important; color: #000!important; border-color: transparent;" role="button">Contact us</a></p>    </div>
+    
+    {# <img  class="service-img-wrap" src="services-banner.jpg" alt="First slide"> #}
+    
+  </div>
+
+  <div class="container">
+  <!--  image left  -->
+  <div class="row">
+    <div class="col-md-6 animation-element slide-left">
+    <h1>What is Build to Rent??</h1>
+      <p class="lead">As you may expect, the term Build to Rent is rather self-explanatory: it’s a property development that is designed with the sole intention of appealing to the rental market as opposed to long-term home ownership.
+            <br /><br />
+          </p>
+
+     
+    </div>
+    <!-- /.col-md-6 -->
+    <div class="col-md-6 animation-element slide-right">
+
+      <div class="row align-items-center h-100">
+        <div class="col">
+          
+         <img src="buildtoRentpic1.jpg" alt="" class="w-100" />
+
+        </div>
+      </div>
+
+    </div>
+    <!-- /.col-md-6 -->
+
+  </div>
+  <!-- /.row -->
+  
+
+  <!--  image right  -->
+  <div class="row">
+    <div class="col-md-6 animation-element slide-right">
+    <h1>The Benefits of Build to Rent Properties</h1>
+      <p class="lead">According to Savills, Build to Rent investment came to £2.6 billion in 2018, suggesting that it can be a lucrative option for commercial landlords. There are many exciting opportunities for landlords investing in Build to Rent. Here are some of the benefits;
+            <br /><br />
+          </p>
+    <ul>
+              <li>Longer tenancies are common (3 years +).</li>
+                <li>High tenant demand.</li>
+                <li>Higher rent rates (around 11% higher than standard rental accommodation)</li>
+                <li>Reliable rental income and likely growth.</li>
+                <li>Landlords retain control over their investment</li>
+                <li>Long term investment rewards..</li>
+              </ul> 
+
+     
+    </div>
+    <!-- /.col-md-6 -->
+    <div class="col-md-6 animation-element slide-right">
+
+      <div class="row align-items-center h-100">
+        <div class="col">
+          
+         <div class="fb-video" data-href="https://www.facebook.com/empirechaseestateagents/videos/484925698756788/" data-width="500" data-show-text="false"><blockquote cite="https://developers.facebook.com/empirechaseestateagents/videos/484925698756788/" class="fb-xfbml-parse-ignore"><a href="https://developers.facebook.com/empirechaseestateagents/videos/484925698756788/"></a><p>Build to rent #PRS #lettings #buildtorent</p>Posted by <a href="https://www.facebook.com/empirechaseestateagents/">Empire Chase</a> on Tuesday, September 10, 2019</blockquote></div>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- /.col-md-6 -->
+
+  </div>
+  <!-- /.row -->
+
+
+
+    <!-- /contact form -->
+  <div class="row" style = "margin-right: 10px;margin-left: 10px;">
+  <!--Section: Contact v.2-->
+<section class="mb-4">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        a matter of hours to help you.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-7 mb-md-0 mb-5" style="
+    background-color: #d39e00;
+    margin: 10px 10px 30px 10px;
+    padding: 20px;
+    border-radius: 3%;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);">
+          {{form(form)}}
+        </div>
+        <!--Grid column-->
+
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>14 Peterborough Road,Harrow,HA1 2BQ</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>0208 4227722</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>info@empirechase.co.uk <info@empirechase.co.uk></p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+
+
+    </div>
+  <!-- /.row contact form-->
+
+  </div> <!-- /container -->
+
+
+
+
+</main>
+
+
+
+{% endblock %}

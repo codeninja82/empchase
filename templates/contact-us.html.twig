@@ -1,0 +1,77 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron jumbotron-fluid services-jumbo" >
+  
+    <div class="container services-jumbo-container">
+      <h1 class="display-3">Lettings</h1>
+      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content.</p>
+      {# <p><a class="btn btn-primary btn-lg" href="#" style = "background-color:  #d39e00!important; color: #FFFFFF!important" role="button">Contact us</a></p> #}
+    </div>
+    
+    {# <img  class="service-img-wrap" src="services-banner.jpg" alt="First slide"> #}
+    
+  </div>
+
+ 	<div class="container">
+		<!-- /contact form -->
+  <div class="row" style = "margin-right: 10px;margin-left: 10px;">
+  <!--Section: Contact v.2-->
+<section class="mb-4">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        a matter of hours to help you.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+         {{form(form)}}
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>14 Peterborough Road,Harrow,HA1 2BQ</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>0208 4227722</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>info@empirechase.co.uk <info@empirechase.co.uk></p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+<div class="column mcb-column one column_column " style="margin-right: auto;margin-left: auto;">
+<div class="column_attr clearfix" style="margin-right: auto;margin-left: auto;">
+<div class="mb-4">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2479.4840543957807!2d-0.33353409814758284!3d51.577691312099894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761374e0f739bf%3A0xb944de8ed055e9b5!2sEmpire+Chase+Estate+Agents!5e0!3m2!1sen!2slk!4v1525769405757" width="100%" frameborder="0" style="border:0; margin-right:auto;margin-left:auto;" allowfullscreen=""></iframe>
+</div>
+</div>
+</div>
+
+    </div>
+	</div>
+
+
+</main>
+
+
+
+{% endblock %}

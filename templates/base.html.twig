@@ -1,0 +1,190 @@
+
+
+{# templates/base.html.twig #}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>{% block title %}My Application{% endblock %}</title>
+       {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+
+            <!-- Renders app.js & a webpack runtime.js file
+                <script src="/build/runtime.js" defer></script>
+                <script src="/build/app.js" defer></script>
+                See note below about the "defer" attribute -->
+        {% endblock %}
+        {# <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+        <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" /> #}
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        {% block stylesheets %}
+           {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+        
+
+    </head>
+    <body>
+
+    {% block navbar %}
+<nav id= "bg-light" class="navbar navbar-expand-lg navbar-light ">
+  <a id="navbar-brand-oval" class="navbar-brand" href="{{ path('emp_home') }}">
+  <img src="/EmpLogo3.png"  class="d-inline-block" alt=" Empire Chase">
+  </a>
+  <a id = "ham-menu" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+   
+   <div id = "ham-icon">
+    <span >
+     <div class = "icon-ham">
+    <div class = "hamburger"></div>
+    </div>
+    </span>
+    </div>
+  </a>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ path('emp_home') }}">HOME<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="dropdown " id="drop-down-sub"><a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-target="#">ABOUT US<span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#!">Our Brands</a></li>
+          <li><a href="#!">Registrations</a></li>
+          <li><a href="#!">Awards</a></li>
+          <li><a href="#!">Testimonials</a></li>
+          <li><a href="#!">Marketing expertise</a></li>
+        </ul>
+        </li>
+       <li class="dropdown " id="drop-down-sub"><a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-target="#">BUY<span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#!">Buying guide</a></li>
+          <li><a href="#!">Why chose us</a></li>
+          <li><a href="#!">Stamp duty calculator</a></li>
+          <li><a href="#!">Morgage Calculator </a></li>
+          <li><a href="#!">First time buyers</a></li>
+           <li><a href="#!">Investment property</a></li>
+          <li><a href="#!">Buy to Let</a></li>
+          <li><a href="#!">Fine homes</a></li>
+          <li><a href="#!">Private estate agency</a></li>
+        </ul>
+        </li>
+        <li class="dropdown " id="drop-down-sub"><a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-target="#">SELL <span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#!">Selling guide</a></li>
+          <li><a href="#!">Why chose us</a></li>
+          <li><a href="#!">Marketing expertise</a></li>
+          <li><a href="#!">Marketing tools</a></li>
+          <li><a href="#!">Premier sales</a></li>
+          <li><a href="#!">Private estate agency</a></li>
+        </ul>
+        </li>
+
+         <li class="dropdown " id="drop-down-sub"><a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-target="#">LET/LANDLORDS<span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#!">Our lettings services</a></li>
+          <li><a href="#!">Property Managemen</a></li>
+          <li><a href="#!">Buy to let landlords</a></li>
+          <li><a href="#!">Portfolio landlords</a></li>
+          <li><a href="#!">Corporate landlords</a></li>
+          <li><a href="#!">Asset Management</a></li>
+            <li><a href="#!">Premier property management</a></li>
+          <li><a href="#!">Fees</a></li>
+        </ul>
+        </li>
+
+               <li class="dropdown " id="drop-down-sub"><a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-target="#">PRS/BUILD TO RENT<span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#!">Research reports</a></li>
+          <li><a href="#!">PRS management</a></li>
+          <li><a href="#!">Asset management</a></li>
+          <li><a href="#!">Our clients</a></li>
+          <li><a href="#!">Our numbers</a></li>
+        </ul>
+        </li>
+
+        <li class="nav-item">
+        <a class="nav-link" href="#">EMPIRE CHASE PREMIER</a>
+      </li>
+
+                  <li class="dropdown " id="drop-down-sub"><a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-target="#">MARKETING EXPERTISE<span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#!">Future of marketing</a></li>
+          <li><a href="#!">Videos</a></li>
+          <li><a href="#!">Social media</a></li>
+          <li><a href="#!">Magazines</a></li>
+          <li><a href="#!">Local presence</a></li>
+          <li><a href="#!">International marketing</a></li>
+        </ul>
+        </li>
+
+   
+    <li class="dropdown " id="drop-down-sub"><a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-target="#">VALUATION<span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#!">Virtual Valuation</a></li>
+          <li><a href="#!">In Person Valuation</a></li>
+        </ul>
+        </li>
+    </ul>
+    <span class="navbar-text">
+     CONTACT US
+    </span>
+  </div>
+</nav>
+    {% endblock %}
+        {% block body %}
+        
+
+    
+        {% endblock %}
+
+         <footer class="footer">
+            <div class="container">
+              
+             <div class="navbar-text pull-left">
+
+
+             <ul>
+<li><a href="http://facebook.com/empirechaseestateagents"><i class="fab fa-facebook"></i></a></li>
+<li><a href="http://linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+<li><a href="http://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+<li><a href="http://youtube.com/"><i class="fab fa-youtube"></i></a></li>
+<li><a href="https://wa.me/16315208126"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+<li><a href="http://plus.google.com/"><i class="fab fa-instagram"></i></a></li>
+
+
+
+</ul>
+      
+              </div>
+    
+            </div>
+          </footer>
+  <!-- =============== Stickyfooter End ====================-->
+
+          <section class="contact-area animation-element slide-left" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="contact-content text-center">
+                        <a href="#"><img src="pOmbudsman-logo.png" alt="logo"></a>
+                        <a href="#"><img src="tsi-code-logo.jpg" alt="logo"></a>
+                        <a href="#"><img src="NALS_logo.jpg" alt="logo"></a>
+                        <div class="hr"></div>
+                        <h6>14 Peterborough Road,Harrow,HA1 2BQ</h6>
+                        <h6>0208 4227722<span>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =============== 1.9 Contact Area End ====================-->
+    <!-- =============== 1.9 Footer-2 Area Start ====================-->
+    <footer-2>
+        <p>Copyright &copy; 2021 <img src="Emp-Logo-tiny.png" alt="logo"> All Rights Reserved.</p>
+    </footer-2>
+
+        
+    </body>
+</html>

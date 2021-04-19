@@ -1,0 +1,43 @@
+
+#properties-container {
+
+    margin-top: 50px;
+    display: flex;
+    
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-header {
+
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    border-bottom: none;
+
+
+}
+
+
+
+@media only screen and (max-width: 479px) {
+
+    #properties-container {
+
+    flex-direction: column;
+
+    }
+
+    .card {
+
+        margin-left: auto;
+    margin-right: auto;
+
+
+    }
+
+ 
+
+
+}

@@ -1,0 +1,112 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=565842800257522&autoLogAppEvents=1" nonce="bHsYtqIV"></script>
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+   <div class="jumbotron jumbotron-fluid services-jumbo" style =" background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/researchMagGlass.jpeg');background-size: cover;
+  height:500px;" >
+  
+    <div class="container services-jumbo-container">
+      <h1 class="display-3">Market Research</h1>
+      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content.</p>
+      <p><a class="btn btn-primary btn-lg" href="#" style = "background-color:  #d39e00!important; color: #FFFFFF!important" role="button">Contact us</a></p>
+    </div>
+    
+    {# <img  class="service-img-wrap" src="services-banner.jpg" alt="First slide"> #}
+    
+  </div>
+
+  <div class="container">
+  <!--  image left  -->
+  <div class="row">
+    <div class="col-md-6 animation-element slide-left">
+    <h1>Market Research</h1>
+      <p class="lead">Market Research
+We produce a market insight report for investment firms who are intending to enter into the build to rent market in a selected area giving complete knowledge of the local lettings market. We have produced various reports during the past few years.
+            <br /><br />
+          </p>
+
+     
+    </div>
+    <!-- /.col-md-6 -->
+    <div class="col-md-6 animation-element slide-right">
+
+      <div class="row align-items-center h-100">
+        <div class="col">
+          
+         <div class="fb-post" data-href="https://www.facebook.com/empirechaseestateagents/posts/2834015073306890" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/empirechaseestateagents/posts/2834015073306890" class="fb-xfbml-parse-ignore"><p>Want to know about the rapidly changing lettings market in your area? Grab a copy of the latest market research report produced by our research team. #lettings #reports #london #rentals #propertymanagement</p>Posted by <a href="https://www.facebook.com/empirechaseestateagents/">Empire Chase</a> on&nbsp;<a href="https://www.facebook.com/empirechaseestateagents/posts/2834015073306890">Thursday, July 4, 2019</a></blockquote></div>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- /.col-md-6 -->
+
+  </div>
+  <!-- /.row -->
+
+  <!-- /contact form -->
+  <div class="row" style = "margin-right: 10px;margin-left: 10px;">
+  <!--Section: Contact v.2-->
+<section class="mb-4">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        a matter of hours to help you.</p>
+
+    <div class="row">
+
+       <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+        
+          {{form(form)}}
+        
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>14 Peterborough Road,Harrow,HA1 2BQ</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>0208 4227722</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>info@empirechase.co.uk <info@empirechase.co.uk></p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+
+
+    </div>
+  <!-- /.row -->
+  
+
+  
+
+  </div> <!-- /container -->
+
+
+
+
+</main>
+
+
+
+{% endblock %}

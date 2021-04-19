@@ -1,0 +1,188 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=565842800257522&autoLogAppEvents=1" nonce="BwxMlIWp"></script>
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+   <div class="jumbotron jumbotron-fluid services-jumbo" style =" background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/propManBanner.jpg');background-size: cover;
+  height:500px;" >
+  
+    <div class="container services-jumbo-container">
+      <h1 class="display-3">Property Management</h1>
+      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content.</p>
+      <p><a class="btn btn-primary btn-lg" href="#" style = "background-color:  #d39e00!important; color: #FFFFFF!important" role="button">Contact us</a></p>
+    </div>
+    
+    {# <img  class="service-img-wrap" src="services-banner.jpg" alt="First slide"> #}
+    
+  </div>
+
+  <div class="container">
+  <!--  image left  -->
+  <div class="row">
+    <div class="col-md-6 animation-element slide-left">
+    <h1>What Does a Property Manager Do?</h1>
+      <p class="lead">From staying on top of council regulations to answering calls about broken dishwashers, property managers protect your investment while also ensuring your passive income actually stays passive.
+            <br /><br />
+           
+          </p>
+
+     
+    </div>
+    <!-- /.col-md-6 -->
+    <div class="col-md-6 animation-element slide-right">
+
+      <div class="row align-items-center h-100">
+        <div class="col">
+          
+         <img src="blockMan-pic.jpg" alt="" class="w-100" />
+
+        </div>
+      </div>
+
+    </div>
+    <!-- /.col-md-6 -->
+
+  </div>
+  <!-- /.row -->
+
+  <div class="row">
+    <div class="col-md-6 order-md-6 animation-element slide-left" style="margin-top: 20px;">
+
+    <h2>We Pride Ourselves on a Complete Array of Owner Services</h2>
+
+    <table style="width:100%" "> <tbody align="left"> <tr> <td> <strong style="">Single Family</strong> 
+</td> 
+ <td> £99.00 per month
+</td> 
+</tr> 
+ <tr> <td> <strong style="">2 Family</strong> 
+</td> 
+ <td> £129.00 per month
+</td> 
+</tr> 
+ <tr> <td> <strong style="">3 Family</strong> 
+</td> 
+ <td> £180.00 per month
+</td> 
+</tr> 
+ <tr> <td> <strong style="">4 Family</strong> 
+</td> 
+ <td> £240.00 per month
+</td> 
+</tr> 
+ <tr> <td> <strong style="">5-50 Unit</strong> 
+</td> 
+ <td> £55.00 per unit
+</td> 
+</tr> 
+ <tr> <td> <strong style="">Over 50 Units</strong> 
+</td> 
+ <td> TBD
+</tr> 
+</tbody> 
+</table>
+
+     
+
+              <ul style="margin-top: 30px">
+                <li> 3 months Free Trial</li>
+                <li>Hassel Free Management.</li>
+                <li>Tenant Application & Screening (The Most Thorough Tenant Screening Available)</li>
+                <li>Completion Of All Leasing Paperwork/Disclosures</li>
+                <li>24 Hour Online Appointment Scheduling (Showings).</li>
+                <li>Emergency Maintenance - 24 Hours</li>
+                <li>Eviction Guarantee</li>
+              </ul> 
+
+    </div>
+    <!-- /.col-md-6 -->
+    <div class="col-md-6 order-md-1 animation-element slide-right">
+
+      <div class="row align-items-center h-100">
+        <div class="col">
+         
+<div class="fb-video" data-href="https://www.facebook.com/empirechaseestateagents/videos/4954274441280932/" data-width="500" data-show-text="false"><blockquote cite="https://developers.facebook.com/empirechaseestateagents/videos/4954274441280932/" class="fb-xfbml-parse-ignore"><a href="https://developers.facebook.com/empirechaseestateagents/videos/4954274441280932/"></a><p>If you own a property in London - You got to try this.  
+
+Professional property management  3 months Free Trial - Get in touch   
+
+propertymanagement&#064;empirechase.co.uk 02084227722  
+
+applies for selected properties only in selected areas only.</p>Posted by <a href="https://www.facebook.com/empirechaseestateagents/">Empire Chase</a> on Saturday, January 9, 2021</blockquote></div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.col-md-6 -->
+
+  </div>
+  <!-- /.row -->
+
+
+  <!-- /contact form -->
+  <div class="row" style = "margin-right: 10px;margin-left: 10px;">
+  <!--Section: Contact v.2-->
+<section class="mb-4">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        a matter of hours to help you.</p>
+
+    <div class="row">
+
+         <!--Grid column-->
+        <div class="col-md-6 mb-md-0 mb-5" style="
+    background-color: #d39e00;
+    margin: 10px 10px 30px 10px;
+    padding: 20px;
+    font-weight: 300;
+    border-radius: 3%;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);">
+           {{form(form)}}
+        </div>
+        <!--Grid column-->
+
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>14 Peterborough Road,Harrow,HA1 2BQ</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>0208 4227722</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>info@empirechase.co.uk <info@empirechase.co.uk></p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+
+
+    </div>
+  <!-- /.row -->
+
+  </div> <!-- /container -->
+
+
+
+
+
+</main>
+
+
+
+{% endblock %}
